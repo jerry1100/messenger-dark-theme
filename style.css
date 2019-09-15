@@ -1,0 +1,8 @@
+* {
+  color: white !important;
+}
+
+/* Other people's messages */
+._o46:not(._3i_m) span {
+  color: black !important;
+}

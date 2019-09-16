@@ -86,3 +86,13 @@ body {
 ._1ht1 ._5blh path {
   fill: white !important;
 }
+
+/* Info sidebar icon backgrounds */
+._6ybv, ._6y56, ._6ybz, ._7hu0, ._7hu1, ._7hty {
+  background: #2c2c2c !important;
+}
+
+/* Info sidebar icons */
+._6ybv path, ._6y56 path, ._6ybz path, ._7hu0 path, ._7hu1 path, ._7hty path {
+  fill: white !important;
+}

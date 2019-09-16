@@ -6,3 +6,18 @@
 ._o46:not(._3i_m) span {
   color: black !important;
 }
+
+/* Chat background, new message container background */
+._4sp8, ._5irm._7mkm {
+  background: #1c1c1c !important;
+}
+
+/* New message input text, search bar input text */
+._1p1v, input::placeholder {
+  -webkit-text-fill-color: white !important;
+}
+
+/* New message input background, search bar input background */
+._7kpk, ._58al {
+  background: #2c2c2c !important;
+}

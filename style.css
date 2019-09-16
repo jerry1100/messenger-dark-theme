@@ -21,3 +21,13 @@
 ._7kpk, ._58al {
   background: #2c2c2c !important;
 }
+
+/* Settings icon background, new message icon background */
+._6ymu, ._6-xp {
+  background: #2c2c2c !important;
+}
+
+/* Settings icon fill, new message icon fill */
+._6ymu path, ._6-xp path {
+  fill: white !important;
+}

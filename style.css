@@ -81,3 +81,8 @@ body {
   background: #1c1c1c !important;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4) !important;
 }
+
+/* Chat list overflow menu */
+._1ht1 ._5blh path {
+  fill: white !important;
+}

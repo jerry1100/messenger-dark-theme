@@ -31,3 +31,28 @@
 ._6ymu path, ._6-xp path {
   fill: white !important;
 }
+
+/* Message bubble row actions */
+._o46 ._1z_2._2u_d._7i2j path {
+  fill: #6c6c6c !important;
+}
+
+/* Message bubble row action hover background */
+._o46 ._1z_2._2u_d._7i2j > span:hover {
+  background: #2c2c2c !important;
+}
+
+/* Message bubble row action hover fill */
+._o46 ._1z_2._2u_d._7i2j > span:hover path {
+  fill: white !important;
+}
+
+/* React emoji flyout background */
+._53ij {
+  background: #2c2c2c !important;
+}
+
+/* Delete message flyout background */
+._53ij ._hw3 {
+  background: black !important;
+}

@@ -70,3 +70,14 @@ body {
 ._3i_m ._2her._6ybq {
   color: #09f !important
 }
+
+/* Message reactions */
+._4kf5 {
+  background: #1c1c1c !important;
+}
+
+/* Message reactions container */
+._aou {
+  background: #1c1c1c !important;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4) !important;
+}

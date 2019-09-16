@@ -7,8 +7,8 @@ body {
 }
 
 /* Other people's messages */
-._o46:not(._3i_m) span {
-  color: black !important;
+._o46:not(._3i_m) ._3058 {
+  background: #2c2c2c !important;
 }
 
 /* Chat background, new message container background */
@@ -59,4 +59,14 @@ body {
 /* Delete message flyout background */
 ._53ij ._hw3 {
   background: black !important;
+}
+
+/* Thumbs up reply emoji */
+._2poz._ui9._576q > svg > rect {
+  fill: #1c1c1c !important;
+}
+
+/* Message verified delivery icon */
+._3i_m ._2her._6ybq {
+  color: #09f !important
 }

@@ -1,9 +1,10 @@
-$dark1: #1c1c1c;
-$dark2: #2c2c2c;
-$placeholderTextColor: #9c9c9c;
+$white: white !important;
+$dark1: #1c1c1c !important;
+$dark2: #2c2c2c !important;
+$placeholderTextColor: #9c9c9c !important;
 
 body {
-  background: $dark1 !important; // dark bg while page loads
+  background: $dark1; // dark bg while page loads
 }
 
 // App
@@ -11,14 +12,14 @@ $appContainer: "._4sp8";
 $verifiedDeliveryIcon: "._2her";
 
 #{$appContainer} {
-  background: $dark1 !important;
+  background: $dark1;
 
   *:not(#{$verifiedDeliveryIcon}) {
-    color: white !important;
+    color: $white;
   }
 
   input::placeholder {
-    color: $placeholderTextColor !important;
+    color: $placeholderTextColor;
   }
 }
 
@@ -28,15 +29,15 @@ $newMessageInputContainer: "._7kpk";
 $newMessageInput: "._1p1v";
 
 #{$newMessageSection} {
-  background: $dark1 !important;
+  background: $dark1;
 }
 
 #{$newMessageInputContainer} {
-  background: $dark2 !important;
+  background: $dark2;
 }
 
 #{$newMessageInput} {
-  -webkit-text-fill-color: $placeholderTextColor !important;
+  -webkit-text-fill-color: $placeholderTextColor;
 }
 
 // Chat list
@@ -48,23 +49,23 @@ $chatListBackToMessagesIcon: "._6-xg";
 $chatListCancelNewMessageIcon: "._6zv9";
 
 #{$chatListSearchInput} {
-  background: $dark2 !important;
+  background: $dark2;
 }
 
 #{$chatListItemOverflowMenu} path {
-  fill: white !important;
+  fill: $white;
 }
 
 #{$chatListSettingsIconContainer}, #{$chatListNewChatIconContainer} {
-  background: $dark2 !important;
+  background: $dark2;
 
   path {
-    fill: white !important;
+    fill: $white;
   }
 }
 
 #{$chatListBackToMessagesIcon}, #{$chatListCancelNewMessageIcon} path {
-  fill: white !important;
+  fill: $white;
 }
 
 // Messages
@@ -74,11 +75,11 @@ $messageBubble: "._3oh-";
 $messageLikeEmoji: "._576q";
 
 #{$messageRow}:not(#{$messageRowSelf}) #{$messageBubble} {
-  background: $dark2 !important;
+  background: $dark2;
 }
 
 #{$messageLikeEmoji} > svg > rect {
-  fill: $dark1 !important;
+  fill: $dark1;
 }
 
 // Message actions
@@ -87,14 +88,14 @@ $messageDeleteFlyout: "._hw3";
 
 #{$messageRowActions} {
   path {
-    fill: $placeholderTextColor !important;
+    fill: $placeholderTextColor;
   }
 
   span:hover {
-    background: #2c2c2c !important;
+    background: $dark2;
 
     path {
-      fill: white !important;
+      fill: $white;
     }
   }
 }
@@ -108,12 +109,12 @@ $messageReactionContainer: "._aou";
 $messageReactionBadge: "._4kf5";
 
 #{$messageReactionContainer} {
-  background: #1c1c1c !important;
+  background: $dark1;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4) !important;
 }
 
 #{$messageReactionBadge} {
-  background: $dark1 !important;
+  background: $dark1;
 }
 
 // Info sidebar
@@ -130,10 +131,10 @@ $infoSidebarFeedbackIcon: "._7hty";
 #{$infoSidebarIgnoreMessagesIcon},
 #{$infoSidebarBlockMessagesIcon},
 #{$infoSidebarFeedbackIcon} {
-  background: $dark2 !important;
+  background: $dark2;
 
   path {
-    fill: white !important;
+    fill: $white;
   }
 }
 
@@ -141,5 +142,5 @@ $infoSidebarFeedbackIcon: "._7hty";
 $searchConversationBar: "._33p7";
 
 #{$searchConversationBar} {
-  background: $dark1 !important;
+  background: $dark1;
 }

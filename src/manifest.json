@@ -4,6 +4,11 @@
   "version": "0.1",
   "description": "Simple dark theme for Facebook Messenger",
   "homepage_url": "https://github.com/jerry1100/messenger-dark-theme",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "content_scripts": [
     {
       "matches": ["https://*.messenger.com/*"],

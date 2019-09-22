@@ -29,6 +29,7 @@ $verifiedDeliveryIcon: "._2her";
 $newMessageSection: "._5irm._7mkm";
 $newMessageInputContainer: "._7kpk";
 $newMessageInput: "._1p1v";
+$newMessageAttachmentContainer: "._4_j4 .chatAttachmentShelf";
 
 #{$newMessageSection} {
   background: $dark1;
@@ -40,6 +41,11 @@ $newMessageInput: "._1p1v";
   #{$newMessageInput} {
     -webkit-text-fill-color: $placeholderTextColor;
   }
+}
+
+#{$newMessageAttachmentContainer} {
+  background: $dark1;
+  border-top: $borderStyle;
 }
 
 // Chat list

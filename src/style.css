@@ -22,6 +22,11 @@ body {
   -webkit-text-fill-color: #9c9c9c !important;
 }
 
+._4_j4 .chatAttachmentShelf {
+  background: #1c1c1c !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
 ._1enh._7q1s ._58al._7tpc {
   background: #2c2c2c !important;
 }

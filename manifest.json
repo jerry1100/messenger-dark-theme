@@ -6,10 +6,7 @@
   "homepage_url": "https://github.com/jerry1100/messenger-dark-theme",
   "content_scripts": [
     {
-      "matches": [
-        "https://*.messenger.com/",
-        "https://*.messenger.com/t/*"
-      ],
+      "matches": ["https://*.messenger.com/*"],
       "css": ["styles.css"]
     }
   ]

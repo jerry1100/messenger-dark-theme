@@ -8,6 +8,9 @@ body {
 ._4sp8 *:not(._2her) {
   color: white !important;
 }
+._4sp8 input::placeholder {
+  color: #9c9c9c !important;
+}
 
 ._5irm._7mkm {
   background: #1c1c1c !important;
@@ -24,9 +27,6 @@ body {
 ._5iwm ._58al {
   background: #2c2c2c !important;
 }
-._5iwm ._58al::placeholder {
-  -webkit-text-fill-color: #9c9c9c !important;
-}
 
 ._5blh path {
   fill: white !important;
@@ -36,6 +36,10 @@ body {
   background: #2c2c2c !important;
 }
 ._6ymu path, ._6-xp path {
+  fill: white !important;
+}
+
+._6-xg path {
   fill: white !important;
 }
 

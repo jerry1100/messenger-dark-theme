@@ -16,6 +16,10 @@ $verifiedDeliveryIcon: "._2her";
   *:not(#{$verifiedDeliveryIcon}) {
     color: white !important;
   }
+
+  input::placeholder {
+    color: $placeholderTextColor !important;
+  }
 }
 
 // New message section
@@ -40,13 +44,10 @@ $chatListSearchInput: "._5iwm ._58al";
 $chatListSettingsIconContainer: "._6ymu";
 $chatListNewChatIconContainer: "._6-xp";
 $chatListItemOverflowMenu: "._5blh";
+$chatListBackToMessagesIcon: "._6-xg";
 
 #{$chatListSearchInput} {
   background: $dark2 !important;
-
-  &::placeholder {
-    -webkit-text-fill-color: $placeholderTextColor !important;
-  }
 }
 
 #{$chatListItemOverflowMenu} path {
@@ -59,6 +60,10 @@ $chatListItemOverflowMenu: "._5blh";
   path {
     fill: white !important;
   }
+}
+
+#{$chatListBackToMessagesIcon} path {
+  fill: white !important;
 }
 
 // Messages

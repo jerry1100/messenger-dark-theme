@@ -2,6 +2,8 @@
 #
 # Packages the necessary files into a .zip archive
 
+npm run transpile
+
 cd src
 
 files=(

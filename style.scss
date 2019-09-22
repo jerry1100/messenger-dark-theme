@@ -161,6 +161,13 @@ $infoPanelFeedbackIcon: "._7hty";
   }
 }
 
+// Misc.
+$typingIndicatorContainer: "._4gd0";
+
+#{$typingIndicatorContainer} {
+  background: $dark1;
+}
+
 // Borders
 $infoPanelContainer: "._4_j5";
 $infoPanelDivBorder: "._1li-";

@@ -1,0 +1,126 @@
+$dark1: #1c1c1c;
+$dark2: #2c2c2c;
+$placeholderTextColor: #9c9c9c;
+
+body {
+  background: $dark1 !important; // dark bg while page loads
+}
+
+// App
+$appContainer: "._4sp8";
+
+#{$appContainer} {
+  background: $dark1 !important;
+
+  * {
+    color: white !important;
+  }
+
+  input::placeholder {
+    -webkit-text-fill-color: $placeholderTextColor !important;
+  }
+}
+
+// Chat messages
+$chatMessageRow: "._o46";
+$chatMessageRowSelf: "._3i_m";
+$chatMessageBubble: "._3058";
+
+#{$chatMessageRow}:not(#{$chatMessageRowSelf}) #{$chatMessageBubble} {
+  background: $dark2 !important;
+}
+
+// New message
+$typeMessageContainer: "._5irm._7mkm";
+$typeMessageInputContainer: "._7kpk";
+$typeMessageInput: "._1p1v";
+
+#{$typeMessageContainer} {
+  background: $dark1 !important;
+
+  #{$typeMessageInputContainer} {
+    background: $dark2 !important;
+  }
+
+  #{$typeMessageInput} {
+    -webkit-text-fill-color: $placeholderTextColor !important;
+  }
+}
+
+// Chat list
+$chatListSearchInputContainer: "._58al";
+$chatListSettingsIconContainer: "._6ymu";
+$chatListNewChatIconContainer: "._6-xp";
+
+#{$chatListSearchInputContainer} {
+  background: $dark2 !important;
+}
+
+#{$chatListSettingsIconContainer}, #{$chatListNewChatIconContainer} {
+  background: $dark2 !important;
+
+  path {
+    fill: white !important;
+  }
+}
+
+/* Message bubble row actions */
+._o46 ._1z_2._2u_d._7i2j path {
+  fill: #6c6c6c !important;
+}
+
+/* Message bubble row action hover background */
+._o46 ._1z_2._2u_d._7i2j > span:hover {
+  background: #2c2c2c !important;
+}
+
+/* Message bubble row action hover fill */
+._o46 ._1z_2._2u_d._7i2j > span:hover path {
+  fill: white !important;
+}
+
+/* React emoji flyout background */
+._53ij {
+  background: #2c2c2c !important;
+}
+
+/* Delete message flyout background */
+._53ij ._hw3 {
+  background: black !important;
+}
+
+/* Thumbs up reply emoji */
+._2poz._ui9._576q > svg > rect {
+  fill: #1c1c1c !important;
+}
+
+/* Message verified delivery icon */
+._3i_m ._2her._6ybq {
+  color: #09f !important
+}
+
+/* Message reactions */
+._4kf5 {
+  background: #1c1c1c !important;
+}
+
+/* Message reactions container */
+._aou {
+  background: #1c1c1c !important;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Chat list overflow menu */
+._1ht1 ._5blh path {
+  fill: white !important;
+}
+
+/* Info sidebar icon backgrounds */
+._6ybv, ._6y56, ._6ybz, ._7hu0, ._7hu1, ._7hty {
+  background: #2c2c2c !important;
+}
+
+/* Info sidebar icons */
+._6ybv path, ._6y56 path, ._6ybz path, ._7hu0 path, ._7hu1 path, ._7hty path {
+  fill: white !important;
+}

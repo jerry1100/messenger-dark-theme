@@ -10,7 +10,7 @@
         "https://*.messenger.com/",
         "https://*.messenger.com/t/*"
       ],
-      "css": ["style.css"]
+      "css": ["styles.css"]
     }
   ]
 }

@@ -2,36 +2,37 @@ body {
   background: #1c1c1c !important;
 }
 
-* {
+._4sp8 {
+  background: #1c1c1c !important;
+}
+._4sp8 * {
   color: white !important;
 }
+._4sp8 input::placeholder {
+  -webkit-text-fill-color: #9c9c9c !important;
+}
 
-/* Other people's messages */
 ._o46:not(._3i_m) ._3058 {
   background: #2c2c2c !important;
 }
 
-/* Chat background, new message container background */
-._4sp8, ._5irm._7mkm {
+._5irm._7mkm {
   background: #1c1c1c !important;
 }
-
-/* New message input text, search bar input text */
-._1p1v, input::placeholder {
-  -webkit-text-fill-color: white !important;
+._5irm._7mkm ._7kpk {
+  background: #2c2c2c !important;
+}
+._5irm._7mkm ._1p1v {
+  -webkit-text-fill-color: #9c9c9c !important;
 }
 
-/* New message input background, search bar input background */
-._7kpk, ._58al {
+._58al {
   background: #2c2c2c !important;
 }
 
-/* Settings icon background, new message icon background */
 ._6ymu, ._6-xp {
   background: #2c2c2c !important;
 }
-
-/* Settings icon fill, new message icon fill */
 ._6ymu path, ._6-xp path {
   fill: white !important;
 }
@@ -68,7 +69,7 @@ body {
 
 /* Message verified delivery icon */
 ._3i_m ._2her._6ybq {
-  color: #09f !important
+  color: #09f !important;
 }
 
 /* Message reactions */
@@ -96,3 +97,5 @@ body {
 ._6ybv path, ._6y56 path, ._6ybz path, ._7hu0 path, ._7hu1 path, ._7hty path {
   fill: white !important;
 }
+
+/*# sourceMappingURL=styles.css.map */

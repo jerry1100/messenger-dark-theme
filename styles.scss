@@ -32,17 +32,18 @@ $newMessageInput: "._1p1v";
 
 #{$newMessageSection} {
   background: $dark1;
-}
 
-#{$newMessageInputContainer} {
-  background: $dark2;
-}
+  #{$newMessageInputContainer} {
+    background: $dark2;
+  }
 
-#{$newMessageInput} {
-  -webkit-text-fill-color: $placeholderTextColor;
+  #{$newMessageInput} {
+    -webkit-text-fill-color: $placeholderTextColor;
+  }
 }
 
 // Chat list
+$chatListContainer: "._1enh._7q1s";
 $chatListSearchInput: "._58al._7tpc";
 $chatListSettingsIconContainer: "._6ymu";
 $chatListNewChatIconContainer: "._6-xp";
@@ -50,24 +51,26 @@ $chatListItemOverflowMenu: "._5blh";
 $chatListBackToMessagesIcon: "._6-xg";
 $chatListCancelNewMessageIcon: "._6zv9";
 
-#{$chatListSearchInput} {
-  background: $dark2;
-}
+#{$chatListContainer} {
+  #{$chatListSearchInput} {
+    background: $dark2;
+  }
 
-#{$chatListItemOverflowMenu} path {
-  fill: $white;
-}
-
-#{$chatListSettingsIconContainer}, #{$chatListNewChatIconContainer} {
-  background: $dark2;
-
-  path {
+  #{$chatListItemOverflowMenu} path {
     fill: $white;
   }
-}
 
-#{$chatListBackToMessagesIcon}, #{$chatListCancelNewMessageIcon} path {
-  fill: $white;
+  #{$chatListSettingsIconContainer}, #{$chatListNewChatIconContainer} {
+    background: $dark2;
+
+    path {
+      fill: $white;
+    }
+  }
+
+  #{$chatListBackToMessagesIcon}, #{$chatListCancelNewMessageIcon} path {
+    fill: $white;
+  }
 }
 
 // Messages
@@ -121,16 +124,29 @@ $messageReactionBadge: "._4kf5";
 
 // Info panel
 $infoPanelSectionHeader: "._1liy ._1lj0";
+$infoPanelSearchConversationBar: "._33p7";
+$infoPanelSearchConversationInput: "._5iwm ._58al";
+
+#{$infoPanelSearchConversationBar} {
+  background: $dark1;
+  border-bottom: $borderStyle;
+
+  #{$infoPanelSearchConversationInput} {
+    background: $dark1;
+  }
+}
+
+#{$infoPanelSectionHeader}:hover {
+  background: $hoverColor;
+}
+
+// Info panel icons
 $infoPanelSearchConversationIcon: "._6ybv";
 $infoPanelEditNicknamesIcon: "._6y56";
 $infoPanelNotificationsIcon: "._6ybz";
 $infoPanelIgnoreMessagesIcon: "._7hu0";
 $infoPanelBlockMessagesIcon: "._7hu1";
 $infoPanelFeedbackIcon: "._7hty";
-
-#{$infoPanelSectionHeader}:hover {
-  background: $hoverColor;
-}
 
 #{$infoPanelSearchConversationIcon},
 #{$infoPanelEditNicknamesIcon},
@@ -143,13 +159,6 @@ $infoPanelFeedbackIcon: "._7hty";
   path {
     fill: $white;
   }
-}
-
-// Misc.
-$searchConversationBar: "._33p7";
-
-#{$searchConversationBar} {
-  background: $dark1;
 }
 
 // Borders

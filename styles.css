@@ -15,31 +15,26 @@ body {
 ._5irm._7mkm {
   background: #1c1c1c !important;
 }
-
-._7kpk {
+._5irm._7mkm ._7kpk {
   background: #2c2c2c !important;
 }
-
-._1p1v {
+._5irm._7mkm ._1p1v {
   -webkit-text-fill-color: #9c9c9c !important;
 }
 
-._58al._7tpc {
+._1enh._7q1s ._58al._7tpc {
   background: #2c2c2c !important;
 }
-
-._5blh path {
+._1enh._7q1s ._5blh path {
   fill: white !important;
 }
-
-._6ymu, ._6-xp {
+._1enh._7q1s ._6ymu, ._1enh._7q1s ._6-xp {
   background: #2c2c2c !important;
 }
-._6ymu path, ._6-xp path {
+._1enh._7q1s ._6ymu path, ._1enh._7q1s ._6-xp path {
   fill: white !important;
 }
-
-._6-xg, ._6zv9 path {
+._1enh._7q1s ._6-xg, ._1enh._7q1s ._6zv9 path {
   fill: white !important;
 }
 
@@ -74,6 +69,14 @@ body {
   background: #1c1c1c !important;
 }
 
+._33p7 {
+  background: #1c1c1c !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+._33p7 ._5iwm ._58al {
+  background: #1c1c1c !important;
+}
+
 ._1liy ._1lj0:hover {
   background: rgba(255, 255, 255, 0.05) !important;
 }
@@ -93,10 +96,6 @@ body {
 ._7hu1 path,
 ._7hty path {
   fill: white !important;
-}
-
-._33p7 {
-  background: #1c1c1c !important;
 }
 
 ._1li-, ._67tu {

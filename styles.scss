@@ -45,6 +45,7 @@ $chatListSettingsIconContainer: "._6ymu";
 $chatListNewChatIconContainer: "._6-xp";
 $chatListItemOverflowMenu: "._5blh";
 $chatListBackToMessagesIcon: "._6-xg";
+$chatListCancelNewMessageIcon: "._6zv9";
 
 #{$chatListSearchInput} {
   background: $dark2 !important;
@@ -62,7 +63,7 @@ $chatListBackToMessagesIcon: "._6-xg";
   }
 }
 
-#{$chatListBackToMessagesIcon} path {
+#{$chatListBackToMessagesIcon}, #{$chatListCancelNewMessageIcon} path {
   fill: white !important;
 }
 

@@ -18,20 +18,20 @@ $verifiedDeliveryIcon: "._2her";
   }
 }
 
-// New message
-$typeMessageContainer: "._5irm._7mkm";
-$typeMessageInputContainer: "._7kpk";
-$typeMessageInput: "._1p1v";
+// New message section
+$newMessageSection: "._5irm._7mkm";
+$newMessageInputContainer: "._7kpk";
+$newMessageInput: "._1p1v";
 
-#{$typeMessageContainer} {
+#{$newMessageSection} {
   background: $dark1 !important;
 }
 
-#{$typeMessageInputContainer} {
+#{$newMessageInputContainer} {
   background: $dark2 !important;
 }
 
-#{$typeMessageInput} {
+#{$newMessageInput} {
   -webkit-text-fill-color: $placeholderTextColor !important;
 }
 
@@ -39,7 +39,7 @@ $typeMessageInput: "._1p1v";
 $chatListSearchInput: "._5iwm ._58al";
 $chatListSettingsIconContainer: "._6ymu";
 $chatListNewChatIconContainer: "._6-xp";
-$chatListOverflowMenu: "._5blh";
+$chatListItemOverflowMenu: "._5blh";
 
 #{$chatListSearchInput} {
   background: $dark2 !important;
@@ -47,6 +47,10 @@ $chatListOverflowMenu: "._5blh";
   &::placeholder {
     -webkit-text-fill-color: $placeholderTextColor !important;
   }
+}
+
+#{$chatListItemOverflowMenu} path {
+  fill: white !important;
 }
 
 #{$chatListSettingsIconContainer}, #{$chatListNewChatIconContainer} {
@@ -57,26 +61,26 @@ $chatListOverflowMenu: "._5blh";
   }
 }
 
-#{$chatListOverflowMenu} path {
-  fill: white !important;
-}
+// Messages
+$messageRow: "._o46";
+$messageRowSelf: "._3i_m";
+$messageBubble: "._3oh-";
+$messageLikeEmoji: "._576q";
 
-// Chat messages
-$chatMessageRow: "._o46";
-$chatMessageRowSelf: "._3i_m";
-$chatMessageBubble: "._3oh-";
-$chatMessageRowActions: "._7i2j";
-
-$chatMessageReactFlyout: "._53ij";
-$chatMessageDeleteFlyout: "._hw3";
-
-$chatMessageLikeEmoji: "._576q";
-
-#{$chatMessageRow}:not(#{$chatMessageRowSelf}) #{$chatMessageBubble} {
+#{$messageRow}:not(#{$messageRowSelf}) #{$messageBubble} {
   background: $dark2 !important;
 }
 
-#{$chatMessageRowActions} {
+#{$messageLikeEmoji} > svg > rect {
+  fill: $dark1 !important;
+}
+
+// Message actions
+$messageRowActions: "._7i2j";
+$messageReactFlyout: "._53ij";
+$messageDeleteFlyout: "._hw3";
+
+#{$messageRowActions} {
   path {
     fill: $placeholderTextColor !important;
   }
@@ -90,16 +94,12 @@ $chatMessageLikeEmoji: "._576q";
   }
 }
 
-#{$chatMessageReactFlyout} {
+#{$messageReactFlyout} {
   background: $dark2 !important;
 }
 
-#{$chatMessageDeleteFlyout} {
+#{$messageDeleteFlyout} {
   background: black !important;
-}
-
-#{$chatMessageLikeEmoji} > svg > rect {
-  fill: $dark1 !important;
 }
 
 // Message reaction badges

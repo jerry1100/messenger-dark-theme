@@ -28,6 +28,10 @@ body {
   -webkit-text-fill-color: #9c9c9c !important;
 }
 
+._5blh path {
+  fill: white !important;
+}
+
 ._6ymu, ._6-xp {
   background: #2c2c2c !important;
 }
@@ -35,12 +39,12 @@ body {
   fill: white !important;
 }
 
-._5blh path {
-  fill: white !important;
-}
-
 ._o46:not(._3i_m) ._3oh- {
   background: #2c2c2c !important;
+}
+
+._576q > svg > rect {
+  fill: #1c1c1c !important;
 }
 
 ._7i2j path {
@@ -59,10 +63,6 @@ body {
 
 ._hw3 {
   background: black !important;
-}
-
-._576q > svg > rect {
-  fill: #1c1c1c !important;
 }
 
 ._aou {

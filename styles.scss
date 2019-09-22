@@ -141,3 +141,10 @@ $infoSidebarFeedbackIcon: "._7hty";
     fill: white !important;
   }
 }
+
+// Misc.
+$searchConversationBar: "._33p7";
+
+#{$searchConversationBar} {
+  background: $dark1 !important;
+}

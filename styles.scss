@@ -2,6 +2,8 @@ $white: white !important;
 $dark1: #1c1c1c !important;
 $dark2: #2c2c2c !important;
 $placeholderTextColor: #9c9c9c !important;
+$hoverColor: rgba(255, 255, 255, 0.05) !important;
+$borderStyle: 1px solid $hoverColor;
 
 body {
   background: $dark1; // dark bg while page loads
@@ -117,20 +119,25 @@ $messageReactionBadge: "._4kf5";
   background: $dark1;
 }
 
-// Info sidebar
-$infoSidebarSearchConversationIcon: "._6ybv";
-$infoSidebarEditNicknamesIcon: "._6y56";
-$infoSidebarNotificationsIcon: "._6ybz";
-$infoSidebarIgnoreMessagesIcon: "._7hu0";
-$infoSidebarBlockMessagesIcon: "._7hu1";
-$infoSidebarFeedbackIcon: "._7hty";
+// Info panel
+$infoPanelSectionHeader: "._1liy ._1lj0";
+$infoPanelSearchConversationIcon: "._6ybv";
+$infoPanelEditNicknamesIcon: "._6y56";
+$infoPanelNotificationsIcon: "._6ybz";
+$infoPanelIgnoreMessagesIcon: "._7hu0";
+$infoPanelBlockMessagesIcon: "._7hu1";
+$infoPanelFeedbackIcon: "._7hty";
 
-#{$infoSidebarSearchConversationIcon},
-#{$infoSidebarEditNicknamesIcon},
-#{$infoSidebarNotificationsIcon},
-#{$infoSidebarIgnoreMessagesIcon},
-#{$infoSidebarBlockMessagesIcon},
-#{$infoSidebarFeedbackIcon} {
+#{$infoPanelSectionHeader}:hover {
+  background: $hoverColor;
+}
+
+#{$infoPanelSearchConversationIcon},
+#{$infoPanelEditNicknamesIcon},
+#{$infoPanelNotificationsIcon},
+#{$infoPanelIgnoreMessagesIcon},
+#{$infoPanelBlockMessagesIcon},
+#{$infoPanelFeedbackIcon} {
   background: $dark2;
 
   path {
@@ -143,4 +150,23 @@ $searchConversationBar: "._33p7";
 
 #{$searchConversationBar} {
   background: $dark1;
+}
+
+// Borders
+$infoPanelContainer: "._4_j5";
+$infoPanelDivBorder: "._1li-";
+$conversationTitleContainer: "._6ynl";
+$chatWindowContainer: "._1t2u";
+$replyToMessageSection: "._67tu";
+
+#{$infoPanelDivBorder}, #{$replyToMessageSection} {
+  border-top: $borderStyle;
+}
+
+#{$infoPanelContainer}, #{$chatWindowContainer} {
+  border-left: $borderStyle;
+}
+
+#{$conversationTitleContainer} {
+  border-bottom: $borderStyle
 }

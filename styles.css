@@ -74,6 +74,10 @@ body {
   background: #1c1c1c !important;
 }
 
+._1liy ._1lj0:hover {
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
 ._6ybv,
 ._6y56,
 ._6ybz,
@@ -93,6 +97,18 @@ body {
 
 ._33p7 {
   background: #1c1c1c !important;
+}
+
+._1li-, ._67tu {
+  border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+._4_j5, ._1t2u {
+  border-left: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+._6ynl {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
 }
 
 /*# sourceMappingURL=styles.css.map */

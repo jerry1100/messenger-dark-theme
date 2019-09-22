@@ -40,7 +40,7 @@ $newMessageInput: "._1p1v";
 }
 
 // Chat list
-$chatListSearchInput: "._5iwm ._58al";
+$chatListSearchInput: "._58al._7tpc";
 $chatListSettingsIconContainer: "._6ymu";
 $chatListNewChatIconContainer: "._6-xp";
 $chatListItemOverflowMenu: "._5blh";
@@ -83,7 +83,6 @@ $messageLikeEmoji: "._576q";
 
 // Message actions
 $messageRowActions: "._7i2j";
-$messageReactFlyout: "._53ij";
 $messageDeleteFlyout: "._hw3";
 
 #{$messageRowActions} {
@@ -98,10 +97,6 @@ $messageDeleteFlyout: "._hw3";
       fill: white !important;
     }
   }
-}
-
-#{$messageReactFlyout} {
-  background: $dark2 !important;
 }
 
 #{$messageDeleteFlyout} {

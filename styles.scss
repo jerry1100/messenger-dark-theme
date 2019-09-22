@@ -8,26 +8,14 @@ body {
 
 // App
 $appContainer: "._4sp8";
+$verifiedDeliveryIcon: "._2her";
 
 #{$appContainer} {
   background: $dark1 !important;
 
-  * {
+  *:not(#{$verifiedDeliveryIcon}) {
     color: white !important;
   }
-
-  input::placeholder {
-    -webkit-text-fill-color: $placeholderTextColor !important;
-  }
-}
-
-// Chat messages
-$chatMessageRow: "._o46";
-$chatMessageRowSelf: "._3i_m";
-$chatMessageBubble: "._3058";
-
-#{$chatMessageRow}:not(#{$chatMessageRowSelf}) #{$chatMessageBubble} {
-  background: $dark2 !important;
 }
 
 // New message
@@ -37,23 +25,28 @@ $typeMessageInput: "._1p1v";
 
 #{$typeMessageContainer} {
   background: $dark1 !important;
+}
 
-  #{$typeMessageInputContainer} {
-    background: $dark2 !important;
-  }
+#{$typeMessageInputContainer} {
+  background: $dark2 !important;
+}
 
-  #{$typeMessageInput} {
-    -webkit-text-fill-color: $placeholderTextColor !important;
-  }
+#{$typeMessageInput} {
+  -webkit-text-fill-color: $placeholderTextColor !important;
 }
 
 // Chat list
-$chatListSearchInputContainer: "._58al";
+$chatListSearchInput: "._5iwm ._58al";
 $chatListSettingsIconContainer: "._6ymu";
 $chatListNewChatIconContainer: "._6-xp";
+$chatListOverflowMenu: "._5blh";
 
-#{$chatListSearchInputContainer} {
+#{$chatListSearchInput} {
   background: $dark2 !important;
+
+  &::placeholder {
+    -webkit-text-fill-color: $placeholderTextColor !important;
+  }
 }
 
 #{$chatListSettingsIconContainer}, #{$chatListNewChatIconContainer} {
@@ -64,63 +57,81 @@ $chatListNewChatIconContainer: "._6-xp";
   }
 }
 
-/* Message bubble row actions */
-._o46 ._1z_2._2u_d._7i2j path {
-  fill: #6c6c6c !important;
-}
-
-/* Message bubble row action hover background */
-._o46 ._1z_2._2u_d._7i2j > span:hover {
-  background: #2c2c2c !important;
-}
-
-/* Message bubble row action hover fill */
-._o46 ._1z_2._2u_d._7i2j > span:hover path {
+#{$chatListOverflowMenu} path {
   fill: white !important;
 }
 
-/* React emoji flyout background */
-._53ij {
-  background: #2c2c2c !important;
+// Chat messages
+$chatMessageRow: "._o46";
+$chatMessageRowSelf: "._3i_m";
+$chatMessageBubble: "._3oh-";
+$chatMessageRowActions: "._7i2j";
+
+$chatMessageReactFlyout: "._53ij";
+$chatMessageDeleteFlyout: "._hw3";
+
+$chatMessageLikeEmoji: "._576q";
+
+#{$chatMessageRow}:not(#{$chatMessageRowSelf}) #{$chatMessageBubble} {
+  background: $dark2 !important;
 }
 
-/* Delete message flyout background */
-._53ij ._hw3 {
+#{$chatMessageRowActions} {
+  path {
+    fill: $placeholderTextColor !important;
+  }
+
+  span:hover {
+    background: #2c2c2c !important;
+
+    path {
+      fill: white !important;
+    }
+  }
+}
+
+#{$chatMessageReactFlyout} {
+  background: $dark2 !important;
+}
+
+#{$chatMessageDeleteFlyout} {
   background: black !important;
 }
 
-/* Thumbs up reply emoji */
-._2poz._ui9._576q > svg > rect {
-  fill: #1c1c1c !important;
+#{$chatMessageLikeEmoji} > svg > rect {
+  fill: $dark1 !important;
 }
 
-/* Message verified delivery icon */
-._3i_m ._2her._6ybq {
-  color: #09f !important
-}
+// Message reaction badges
+$messageReactionContainer: "._aou";
+$messageReactionBadge: "._4kf5";
 
-/* Message reactions */
-._4kf5 {
-  background: #1c1c1c !important;
-}
-
-/* Message reactions container */
-._aou {
+#{$messageReactionContainer} {
   background: #1c1c1c !important;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4) !important;
 }
 
-/* Chat list overflow menu */
-._1ht1 ._5blh path {
-  fill: white !important;
+#{$messageReactionBadge} {
+  background: $dark1 !important;
 }
 
-/* Info sidebar icon backgrounds */
-._6ybv, ._6y56, ._6ybz, ._7hu0, ._7hu1, ._7hty {
-  background: #2c2c2c !important;
-}
+// Info sidebar
+$infoSidebarSearchConversationIcon: "._6ybv";
+$infoSidebarEditNicknamesIcon: "._6y56";
+$infoSidebarNotificationsIcon: "._6ybz";
+$infoSidebarIgnoreMessagesIcon: "._7hu0";
+$infoSidebarBlockMessagesIcon: "._7hu1";
+$infoSidebarFeedbackIcon: "._7hty";
 
-/* Info sidebar icons */
-._6ybv path, ._6y56 path, ._6ybz path, ._7hu0 path, ._7hu1 path, ._7hty path {
-  fill: white !important;
+#{$infoSidebarSearchConversationIcon},
+#{$infoSidebarEditNicknamesIcon},
+#{$infoSidebarNotificationsIcon},
+#{$infoSidebarIgnoreMessagesIcon},
+#{$infoSidebarBlockMessagesIcon},
+#{$infoSidebarFeedbackIcon} {
+  background: $dark2 !important;
+
+  path {
+    fill: white !important;
+  }
 }

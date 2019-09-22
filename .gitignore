@@ -1,1 +1,4 @@
+.DS_Store
 *.map
+*.zip
+node_modules

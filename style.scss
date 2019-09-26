@@ -85,9 +85,14 @@ $messageRowSelf: "._3i_m";
 $messageBubble: "._3oh-";
 $messageLinkBubble: "._5i_d";
 $messageLikeEmoji: "._576q";
+$messageRemovedBubble: "._7301._hh7._hh7._6ybn";
 
 #{$messageRow}:not(#{$messageRowSelf}) #{$messageBubble}, #{$messageLinkBubble} {
   background: $dark2;
+}
+
+#{$messageRemovedBubble}, #{$messageRemovedBubble}:active {
+  background: $dark1;
 }
 
 #{$messageLikeEmoji} > svg > rect {

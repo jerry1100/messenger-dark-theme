@@ -1,6 +1,7 @@
 $white: white !important;
 $dark1: #1c1c1c !important;
 $dark2: #2c2c2c !important;
+$dark3: #3c3c3c !important;
 $placeholderTextColor: #9c9c9c !important;
 $hoverColor: rgba(255, 255, 255, 0.05) !important;
 $borderStyle: 1px solid $hoverColor;
@@ -86,6 +87,7 @@ $messageBubble: "._3oh-";
 $messageLinkBubble: "._5i_d";
 $messageLikeEmoji: "._576q";
 $messageRemovedBubble: "._7301._hh7._hh7._6ybn";
+$messageCodeBubble: "._wu0";
 
 #{$messageRow}:not(#{$messageRowSelf}) #{$messageBubble}, #{$messageLinkBubble} {
   background: $dark2;
@@ -93,6 +95,11 @@ $messageRemovedBubble: "._7301._hh7._hh7._6ybn";
 
 #{$messageRemovedBubble}, #{$messageRemovedBubble}:active {
   background: $dark1;
+}
+
+#{$messageCodeBubble} {
+  background: $dark3;
+  border: $dark3;
 }
 
 #{$messageLikeEmoji} > svg > rect {

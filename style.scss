@@ -67,7 +67,8 @@ $chatListCancelNewMessageIcon: "._6zv9";
     fill: $white;
   }
 
-  #{$chatListSettingsIconContainer}, #{$chatListNewChatIconContainer} {
+  #{$chatListSettingsIconContainer},
+  #{$chatListNewChatIconContainer} {
     background: $dark2;
 
     path {
@@ -75,7 +76,8 @@ $chatListCancelNewMessageIcon: "._6zv9";
     }
   }
 
-  #{$chatListBackToMessagesIcon}, #{$chatListCancelNewMessageIcon} path {
+  #{$chatListBackToMessagesIcon},
+  #{$chatListCancelNewMessageIcon} path {
     fill: $white;
   }
 }
@@ -88,12 +90,16 @@ $messageLinkBubble: "._5i_d";
 $messageLikeEmoji: "._576q";
 $messageRemovedBubble: "._7301._hh7._hh7._6ybn";
 $messageCodeBubble: "._wu0";
+$messageYouRepliedHeader: "._3egs";
 
-#{$messageRow}:not(#{$messageRowSelf}) #{$messageBubble}, #{$messageLinkBubble} {
+#{$messageRow}:not(#{$messageRowSelf}) #{$messageBubble},
+#{$messageLinkBubble} {
   background: $dark2;
 }
 
-#{$messageRemovedBubble}, #{$messageRemovedBubble}:active {
+#{$messageRemovedBubble},
+#{$messageRemovedBubble}:active,
+#{$messageYouRepliedHeader} {
   background: $dark1;
 }
 
@@ -194,11 +200,13 @@ $conversationTitleContainer: "._6ynl";
 $chatWindowContainer: "._1t2u";
 $replyToMessageSection: "._67tu";
 
-#{$infoPanelDivBorder}, #{$replyToMessageSection} {
+#{$infoPanelDivBorder},
+#{$replyToMessageSection} {
   border-top: $borderStyle;
 }
 
-#{$infoPanelContainer}, #{$chatWindowContainer} {
+#{$infoPanelContainer},
+#{$chatWindowContainer} {
   border-left: $borderStyle;
 }
 

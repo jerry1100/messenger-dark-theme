@@ -33,21 +33,27 @@ body {
 ._1enh._7q1s ._5blh path {
   fill: white !important;
 }
-._1enh._7q1s ._6ymu, ._1enh._7q1s ._6-xp {
+._1enh._7q1s ._6ymu,
+._1enh._7q1s ._6-xp {
   background: #2c2c2c !important;
 }
-._1enh._7q1s ._6ymu path, ._1enh._7q1s ._6-xp path {
+._1enh._7q1s ._6ymu path,
+._1enh._7q1s ._6-xp path {
   fill: white !important;
 }
-._1enh._7q1s ._6-xg, ._1enh._7q1s ._6zv9 path {
+._1enh._7q1s ._6-xg,
+._1enh._7q1s ._6zv9 path {
   fill: white !important;
 }
 
-._o46:not(._3i_m) ._3oh-, ._5i_d {
+._o46:not(._3i_m) ._3oh-,
+._5i_d {
   background: #2c2c2c !important;
 }
 
-._7301._hh7._hh7._6ybn, ._7301._hh7._hh7._6ybn:active {
+._7301._hh7._hh7._6ybn,
+._7301._hh7._hh7._6ybn:active,
+._3egs {
   background: #1c1c1c !important;
 }
 
@@ -116,11 +122,13 @@ body {
   background: #1c1c1c !important;
 }
 
-._1li-, ._67tu {
+._1li-,
+._67tu {
   border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
 }
 
-._4_j5, ._1t2u {
+._4_j5,
+._1t2u {
   border-left: 1px solid rgba(255, 255, 255, 0.05) !important;
 }
 

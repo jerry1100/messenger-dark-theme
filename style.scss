@@ -91,9 +91,11 @@ $messageLikeEmoji: "._576q";
 $messageRemovedBubble: "._7301._hh7._hh7._6ybn";
 $messageCodeBubble: "._wu0";
 $messageYouRepliedHeader: "._3egs";
+$messageGifFooter: "._2f5n";
 
 #{$messageRow}:not(#{$messageRowSelf}) #{$messageBubble},
-#{$messageLinkBubble} {
+#{$messageLinkBubble},
+#{$messageGifFooter} {
   background: $dark2;
 }
 

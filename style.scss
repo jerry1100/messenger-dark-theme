@@ -196,6 +196,7 @@ $typingIndicatorContainer: "._4gd0";
 }
 
 // Borders
+$chatBubbles: "._7q1i, ._7q0v";
 $infoPanelContainer: "._4_j5";
 $infoPanelDivBorder: "._1li-";
 $conversationTitleContainer: "._6ynl";
@@ -214,4 +215,8 @@ $replyToMessageSection: "._67tu";
 
 #{$conversationTitleContainer} {
   border-bottom: $borderStyle
+}
+
+#{$chatBubbles}{
+  border:0 !important;
 }

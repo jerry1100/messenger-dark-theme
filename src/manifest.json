@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Messenger Dark Theme",
-  "version": "0.6",
+  "version": "0.7",
   "description": "Simple dark theme for Facebook Messenger.",
   "homepage_url": "https://github.com/jerry1100/messenger-dark-theme",
   "icons": {

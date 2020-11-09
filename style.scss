@@ -58,6 +58,7 @@ $expandMessageTypesButton: "._7mki g";
 $chatListContainer: "._1enh._7q1s";
 $chatListSearchInput: "._58al._7tpc";
 $chatListSettingsIconContainer: "._6ymu";
+$chatListCreateNewRoomIconContainer: ".hzft2hz5";
 $chatListNewChatIconContainer: "._6-xp";
 $chatListItemOverflowMenu: "._5blh";
 $chatListBackToMessagesIcon: "._6-xg";
@@ -73,6 +74,7 @@ $chatListCancelNewMessageIcon: "._6zv9";
   }
 
   #{$chatListSettingsIconContainer},
+  #{$chatListCreateNewRoomIconContainer},
   #{$chatListNewChatIconContainer} {
     background: $dark2;
 

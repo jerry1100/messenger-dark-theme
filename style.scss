@@ -63,6 +63,7 @@ $chatListNewChatIconContainer: "._6-xp";
 $chatListItemOverflowMenu: "._5blh";
 $chatListBackToMessagesIcon: "._6-xg";
 $chatListCancelNewMessageIcon: "._6zv9";
+$chatListGroupChatHeads: "._7q1i, ._7q0v";
 
 #{$chatListContainer} {
   #{$chatListSearchInput} {
@@ -86,6 +87,19 @@ $chatListCancelNewMessageIcon: "._6zv9";
   #{$chatListBackToMessagesIcon},
   #{$chatListCancelNewMessageIcon} path {
     fill: $white;
+  }
+
+  #{$chatListGroupChatHeads} {
+    $chatHeadSize: 36px !important;
+
+    border: none !important;
+    height: $chatHeadSize;
+    width: $chatHeadSize;
+
+    img {
+      height: $chatHeadSize;
+      width: $chatHeadSize;
+    }
   }
 }
 

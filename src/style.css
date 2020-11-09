@@ -51,6 +51,15 @@ body {
 ._1enh._7q1s ._6zv9 path {
   fill: #ececec !important;
 }
+._1enh._7q1s ._7q1i, ._1enh._7q1s ._7q0v {
+  border: none !important;
+  height: 36px !important;
+  width: 36px !important;
+}
+._1enh._7q1s ._7q1i img, ._1enh._7q1s ._7q0v img {
+  height: 36px !important;
+  width: 36px !important;
+}
 
 ._o46:not(._3i_m) ._3oh-,
 ._5i_d,

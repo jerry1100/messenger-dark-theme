@@ -1,245 +1,157 @@
-$white: #ececec !important;
 $dark1: #1c1c1c !important;
 $dark2: #2c2c2c !important;
 $dark3: #3c3c3c !important;
-$placeholderTextColor: #9c9c9c !important;
-$hoverColor: rgba(255, 255, 255, 0.05) !important;
-$borderStyle: 1px solid $hoverColor;
 
-body {
-  background: $dark1; // dark bg while page loads
+$primary-text: #ececec !important;
+$secondary-text: #bcbcbc !important;
+
+$hover-color: rgba(255, 255, 255, 0.04) !important;
+$overlay-color: rgba(0, 0, 0, 0.8) !important;
+$box-shadow-color: black !important;
+
+// Hide desktop app upsell
+.f6rbj1fe {
+  display: none !important;
 }
 
-// App
-$appContainer: "._4sp8";
-$verifiedDeliveryIcon: "._2her";
-
-#{$appContainer} {
-  background: $dark1;
-
-  *:not(#{$verifiedDeliveryIcon}) {
-    color: $white;
-  }
-
-  input::placeholder {
-    color: $placeholderTextColor;
-  }
+// Color all svgs except those with theme color
+svg:not([fill]) {
+  fill: $primary-text;
 }
 
-// New message section
-$newMessageSection: "._5irm._7mkm";
-$newMessageInputContainer: "._7kpk";
-$newMessageInput: "._1p1v";
-$newMessageAttachmentContainer: "._4_j4 .chatAttachmentShelf";
-$expandMessageTypesButton: "._7mki g";
-
-#{$newMessageSection} {
-  background: $dark1;
-
-  #{$newMessageInputContainer} {
-    background: $dark2;
-  }
-
-  #{$newMessageInput} {
-    -webkit-text-fill-color: $placeholderTextColor;
-  }
-}
-
-#{$newMessageAttachmentContainer} {
-  background: $dark1;
-  border-top: $borderStyle;
-}
-
-#{$expandMessageTypesButton} {
+// Fix right side of message bar not being rounded
+rect:not([fill]) {
   fill: $dark1;
 }
 
-// Chat list
-$chatListContainer: "._1enh._7q1s";
-$chatListSearchInput: "._58al._7tpc";
-$chatListSettingsIconContainer: "._6ymu";
-$chatListCreateNewRoomIconContainer: ".hzft2hz5";
-$chatListNewChatIconContainer: "._6-xp";
-$chatListItemOverflowMenu: "._5blh";
-$chatListBackToMessagesIcon: "._6-xg";
-$chatListCancelNewMessageIcon: "._6zv9";
-$chatListGroupChatHeads: "._7q1i, ._7q0v";
-
-#{$chatListContainer} {
-  #{$chatListSearchInput} {
-    background: $dark2;
-  }
-
-  #{$chatListItemOverflowMenu} path {
-    fill: $white;
-  }
-
-  #{$chatListSettingsIconContainer},
-  #{$chatListCreateNewRoomIconContainer},
-  #{$chatListNewChatIconContainer} {
-    background: $dark2;
-
-    path {
-      fill: $white;
-    }
-  }
-
-  #{$chatListBackToMessagesIcon},
-  #{$chatListCancelNewMessageIcon} path {
-    fill: $white;
-  }
-
-  #{$chatListGroupChatHeads} {
-    $chatHeadSize: 36px !important;
-
-    border: none !important;
-    height: $chatHeadSize;
-    width: $chatHeadSize;
-
-    img {
-      height: $chatHeadSize;
-      width: $chatHeadSize;
-    }
-  }
+// Invert colors of icon buttons
+i {
+  filter: invert(50%) !important;
 }
 
-// Messages
-$messageRow: "._o46";
-$messageRowSelf: "._3i_m";
-$messageBubble: "._3oh-";
-$messageLinkBubble: "._5i_d";
-$messageLikeEmoji: "._576q";
-$messageRemovedBubble: "._7301._hh7._hh7._6ybn";
-$messageCodeBubble: "._wu0";
-$messageYouRepliedHeader: "._3egs";
-$messageGifFooter: "._2f5n";
-
-#{$messageRow}:not(#{$messageRowSelf}) #{$messageBubble},
-#{$messageLinkBubble},
-#{$messageGifFooter} {
-  background: $dark2;
-}
-
-#{$messageRemovedBubble},
-#{$messageRemovedBubble}:active,
-#{$messageYouRepliedHeader} {
-  background: $dark1;
-}
-
-#{$messageCodeBubble} {
-  background: $dark3;
-  border: $dark3;
-}
-
-#{$messageLikeEmoji} > svg > rect {
-  fill: $dark1;
-}
-
-// Message actions
-$messageRowActions: "._7i2j";
-$messageDeleteFlyout: "._hw3";
-
-#{$messageRowActions} {
-  path {
-    fill: $placeholderTextColor;
-  }
-
-  span:hover {
-    background: $dark2;
-
-    path {
-      fill: $white;
-    }
-  }
-}
-
-#{$messageDeleteFlyout} {
-  background: black !important;
-}
-
-// Message reaction badges
-$messageReactionContainer: "._aou";
-$messageReactionBadge: "._4kf5";
-
-#{$messageReactionContainer} {
-  background: $dark1;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4) !important;
-}
-
-#{$messageReactionBadge} {
-  background: $dark1;
-}
-
-// Info panel
-$infoPanelSectionHeader: "._1liy ._1lj0";
-$infoPanelSearchConversationBar: "._33p7";
-$infoPanelSearchConversationInput: "._5iwm ._58al";
-
-#{$infoPanelSearchConversationBar} {
-  background: $dark1;
-  border-bottom: $borderStyle;
-
-  #{$infoPanelSearchConversationInput} {
-    background: $dark1;
-  }
-}
-
-#{$infoPanelSectionHeader}:hover {
-  background: $hoverColor;
-}
-
-// Info panel icons
-$infoPanelSearchConversationIcon: "._6ybv";
-$infoPanelEditNicknamesIcon: "._6y56";
-$infoPanelChangeThemeIconCircle: "._6ymf";
-$infoPanelNotificationsIcon: "._6ybz";
-$infoPanelIgnoreMessagesIcon: "._7hu0";
-$infoPanelBlockMessagesIcon: "._7hu1";
-$infoPanelFeedbackIcon: "._7hty";
-
-#{$infoPanelSearchConversationIcon},
-#{$infoPanelEditNicknamesIcon},
-#{$infoPanelChangeThemeIconCircle},
-#{$infoPanelNotificationsIcon},
-#{$infoPanelIgnoreMessagesIcon},
-#{$infoPanelBlockMessagesIcon},
-#{$infoPanelFeedbackIcon} {
-  background: $dark2;
-
-  path {
-    fill: $white;
-  }
-}
-
-// Misc.
-$typingIndicatorContainer: "._4gd0";
-$messengerDesktopUpsellContainer: ".sn0e7ne5.f6rbj1fe";
-
-#{$typingIndicatorContainer} {
-  background: $dark1;
-}
-
-#{$messengerDesktopUpsellContainer} {
-  display: none;
-}
-
-// Borders
-$infoPanelContainer: "._4_j5";
-$infoPanelDivBorder: "._1li-";
-$conversationTitleContainer: "._6ynl";
-$chatWindowContainer: "._1t2u";
-$replyToMessageSection: "._67tu";
-
-#{$infoPanelDivBorder},
-#{$replyToMessageSection} {
-  border-top: $borderStyle;
-}
-
-#{$infoPanelContainer},
-#{$chatWindowContainer} {
-  border-left: $borderStyle;
-}
-
-#{$conversationTitleContainer} {
-  border-bottom: $borderStyle
+:root:root {
+  // --accent: #0099FF;
+  // --always-white: #FFFFFF;
+  // --always-black: black;
+  // --always-dark-gradient: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6));
+  // --always-dark-overlay: rgba(0, 0, 0, 0.4);
+  // --always-light-overlay: rgba(255, 255, 255, 0.4);
+  // --always-gray-40: #65676B;
+  // --always-gray-75: #BCC0C4;
+  // --always-gray-95: #F0F2F5;
+  // --attachment-footer-background: #F0F2F5;
+  // --base-blue: #1877F2;
+  // --base-cherry: #F3425F;
+  // --base-grape: #9360F7;
+  // --base-lemon: #F7B928;
+  // --base-lime: #45BD62;
+  // --base-pink: #FF66BF;
+  // --base-seafoam: #54C7EC;
+  // --base-teal: #2ABBA7;
+  // --base-tomato: #FB724B;
+  // --blue-link: #216FDB;
+  --card-background: #{$dark1};
+  // --card-background-flat: #F7F8FA;
+  // --comment-background: rgba(134, 142, 153, 0.1);
+  // --comment-footer-background: #F6F9FA;
+  // --dataviz-primary-1: rgb(48,200,180);
+  // --disabled-button-background: #E4E6EB;
+  // --disabled-icon: #BCC0C4;
+  // --disabled-text: #BCC0C4;
+  --divider: #{$dark2};
+  // --event-date: #F3425F;
+  // --filter-accent: invert(50%) sepia(94%) saturate(3979%) hue-rotate(183deg) brightness(104%) contrast(103%);
+  // --filter-always-white: invert(100%);
+  // --filter-disabled-icon: invert(80%) sepia(6%) saturate(200%) saturate(120%) hue-rotate(173deg) brightness(98%) contrast(89%);
+  // --filter-placeholder-icon: invert(59%) sepia(11%) saturate(200%) saturate(135%) hue-rotate(176deg) brightness(96%) contrast(94%);
+  // --filter-primary-icon: invert(8%) sepia(10%) saturate(200%) saturate(200%) saturate(166%) hue-rotate(177deg) brightness(104%) contrast(91%);
+  // --filter-secondary-icon: invert(39%) sepia(21%) saturate(200%) saturate(109.5%) hue-rotate(174deg) brightness(94%) contrast(86%);
+  // --filter-warning-icon: invert(77%) sepia(29%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(128%) hue-rotate(359deg) brightness(102%) contrast(107%);
+  // --filter-blue-link-icon: invert(30%) sepia(98%) saturate(200%) saturate(200%) saturate(200%) saturate(166.5%) hue-rotate(192deg) brightness(91%) contrast(101%);
+  // --filter-positive: invert(37%) sepia(61%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(115%) hue-rotate(91deg) brightness(97%) contrast(105%);
+  // --filter-negative: invert(25%) sepia(33%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(110%) hue-rotate(345deg) brightness(132%) contrast(96%);
+  // --font-family-apple: system-ui, -apple-system, BlinkMacSystemFont, ".SFNSText-Regular", sans-serif;
+  // --font-family-default: Helvetica, Arial, sans-serif;
+  // --font-family-segoe: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+  // --glimmer-spinner-icon: #65676B;
+  // --hero-banner-background: #FFFFFF;
+  --hosted-view-selected-state: #{$hover-color};
+  // --highlight-bg: #E7F3FF;
+  --hover-overlay: #{$hover-color};
+  // --media-hover: rgba(68, 73, 80, 0.15);
+  --media-inner-border: #{$hover-color};
+  --media-outer-border: #{$dark1};
+  // --media-pressed: rgba(68, 73, 80, 0.35);
+  --messenger-card-background: #{$dark1};
+  --messenger-reply-background: #{$dark3};
+  --overlay-alpha-80: #{$overlay-color};
+  // --overlay-on-media: rgba(0, 0, 0, 0.6);
+  // --nav-bar-background: #FFFFFF;
+  // --nav-bar-background-gradient: linear-gradient(to top, #FFFFFF, rgba(255,255,255.9), rgba(255,255,255,0.7), rgba(255,255,255,0.4), rgba(255,255,255,0));
+  // --nav-bar-background-gradient-wash: linear-gradient(to top, #F0F2F5, rgba(240,242,245.9), rgba(240,242,245,0.7), rgba(240,242,245,0.4), rgba(240,242,245,0));
+  // --negative: hsl(350, 87%, 55%);
+  // --negative-background: hsl(350, 87%, 55%, 20%);
+  // --new-notification-background: #E7F3FF;
+  // --non-media-pressed: rgba(68, 73, 80, 0.15);
+  // --non-media-pressed-on-dark: rgba(255, 255, 255, 0.3);
+  // --notification-badge: #F02849;
+  // --placeholder-icon: #8A8D91;
+  // --placeholder-text: #8A8D91;
+  // --placeholder-text-on-media: rgba(255, 255, 255, 0.5);
+  --popover-background: #{$dark1};
+  // --positive: #5AD539;
+  // --positive-background: #DEEFE1;
+  // --press-overlay: rgba(0, 0, 0, 0.1);
+  // --primary-button-background: #0099FF;
+  // --primary-button-background-experiment: #1B74E4;
+  // --primary-button-pressed: #77A7FF;
+  // --primary-button-text: #FFFFFF;
+  --primary-deemphasized-button-background: #{$dark2};
+  // --primary-deemphasized-button-pressed: rgba(0, 0, 0, 0.05);
+  // --primary-deemphasized-button-pressed-overlay: rgba(25, 110, 255, 0.15);
+  // --primary-deemphasized-button-text: #1877F2;
+  // --primary-icon: #050505;
+  --primary-text: #{$primary-text};
+  // --primary-text-on-media: #FFFFFF;
+  // --progress-ring-neutral-background: rgba(0, 0, 0, 0.2);
+  // --progress-ring-neutral-foreground: #000000;
+  // --progress-ring-on-media-background: rgba(255, 255, 255, 0.2);
+  // --progress-ring-on-media-foreground: #FFFFFF;
+  // --progress-ring-blue-background: rgba(24, 119, 242, 0.2);
+  // --progress-ring-blue-foreground: hsl(214, 89%, 52%);
+  // --progress-ring-disabled-background: rgba(190,195,201, 0.2);
+  // --progress-ring-disabled-foreground: #BEC3C9;
+  --scroll-thumb: #{$dark2};
+  --secondary-button-background: #{$dark2};
+  // --secondary-button-background-floating: #ffffff;
+  // --secondary-button-background-on-dark: rgba(0, 0, 0, 0.4);
+  // --secondary-button-pressed: rgba(0, 0, 0, 0.05);
+  // --secondary-button-text: #050505;
+  // --secondary-icon: #65676B;
+  --secondary-text: #{$secondary-text};
+  // --secondary-text-on-media: rgba(255, 255, 255, 0.9);
+  // --section-header-text: #4B4C4F;
+  --shadow-1: #{$dark1};
+  --shadow-2: #{$box-shadow-color};
+  // --shadow-5: rgba(0, 0, 0, 0.5);
+  // --shadow-8: rgba(0, 0, 0, 0.8);
+  --shadow-inset: #{$dark1};
+  --surface-background: #{$dark1};
+  // --text-highlight: rgba(24, 119, 242, 0.2);
+  // --toggle-active-background: #E7F3FF;
+  // --toggle-active-icon: rgb(24, 119, 242);
+  // --toggle-active-text: rgb(24, 119, 242);
+  // --toggle-button-active-background: #E7F3FF;
+  --wash: #{$dark2};
+  --web-wash: #{$dark1};
+  // --warning: hsl(40, 89%, 52%);
+  // --dataviz-primary-2: rgb(134,218,255);
+  // --dataviz-primary-3: rgb(95,170,255);
+  // --dataviz-secondary-1: rgb(118,62,230);
+  // --dataviz-secondary-2: rgb(147,96,247);
+  // --dataviz-secondary-3: rgb(219,26,139);
+  // --dataviz-supplementary-1: rgb(255,122,105);
+  // --dataviz-supplementary-2: rgb(241,168,23);
+  // --dataviz-supplementary-3: rgb(49,162,76);
+  // --dataviz-supplementary-4: rgb(50,52,54);
 }

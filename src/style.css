@@ -1,7 +1,3 @@
-.f6rbj1fe {
-  display: none !important;
-}
-
 svg:not([fill]) {
   fill: #ececec !important;
 }
@@ -12,6 +8,14 @@ rect:not([fill]) {
 
 i {
   filter: invert(50%) !important;
+}
+
+.f6rbj1fe {
+  display: none !important;
+}
+
+.mw5ich9q {
+  min-height: calc(100vh - 124px) !important;
 }
 
 :root:root {

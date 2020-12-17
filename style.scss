@@ -9,11 +9,6 @@ $hover-color: rgba(255, 255, 255, 0.04) !important;
 $overlay-color: rgba(0, 0, 0, 0.8) !important;
 $box-shadow-color: black !important;
 
-// Hide desktop app upsell
-.f6rbj1fe {
-  display: none !important;
-}
-
 // Color all svgs except those with theme color
 svg:not([fill]) {
   fill: $primary-text;
@@ -27,6 +22,16 @@ rect:not([fill]) {
 // Invert colors of icon buttons
 i {
   filter: invert(50%) !important;
+}
+
+// Hide desktop app upsell
+.f6rbj1fe {
+  display: none !important;
+}
+
+// Allow chat list search section take up space reserved for desktop app upsell
+.mw5ich9q {
+  min-height: calc(100vh - 124px) !important;
 }
 
 :root:root {

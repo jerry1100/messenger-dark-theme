@@ -41,16 +41,12 @@ html._9dls {
 
 ::-webkit-scrollbar {
   background: var(--messenger-card-background) !important;
-  width: 14px !important;
+  width: 12px !important;
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--scroll-thumb) !important;
-  border: 8px !important;
-
-  &:hover {
-    background: #3c3c3c !important;
-  }
+  border-radius: 8px !important;
 }
 
 :root:root {
@@ -145,7 +141,7 @@ html._9dls {
   // --progress-ring-blue-foreground: hsl(214, 89%, 52%);
   // --progress-ring-disabled-background: rgba(190,195,201, 0.2);
   // --progress-ring-disabled-foreground: #BEC3C9;
-  --scroll-thumb: #{$dark2};
+  --scroll-thumb: #{$dark3};
   --secondary-button-background: #{$dark2};
   // --secondary-button-background-floating: #ffffff;
   // --secondary-button-background-on-dark: rgba(0, 0, 0, 0.4);

@@ -24,15 +24,12 @@ html._9dls {
 
 ::-webkit-scrollbar {
   background: var(--messenger-card-background) !important;
-  width: 14px !important;
+  width: 12px !important;
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--scroll-thumb) !important;
-  border: 8px !important;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #3c3c3c !important;
+  border-radius: 8px !important;
 }
 
 :root:root {
@@ -48,7 +45,7 @@ html._9dls {
   --popover-background: #1c1c1c !important;
   --primary-deemphasized-button-background: #2c2c2c !important;
   --primary-text: #ececec !important;
-  --scroll-thumb: #2c2c2c !important;
+  --scroll-thumb: #3c3c3c !important;
   --secondary-button-background: #2c2c2c !important;
   --secondary-text: #bcbcbc !important;
   --shadow-1: #1c1c1c !important;

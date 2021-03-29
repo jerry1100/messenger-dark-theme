@@ -34,6 +34,25 @@ i {
   min-height: calc(100vh - 124px) !important;
 }
 
+// Hide scrollbar on html element that doesn't do anything
+html._9dls {
+  overflow-y: auto !important;
+}
+
+::-webkit-scrollbar {
+  background: var(--messenger-card-background) !important;
+  width: 14px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-thumb) !important;
+  border: 8px !important;
+
+  &:hover {
+    background: #3c3c3c !important;
+  }
+}
+
 :root:root {
   // --accent: #0099FF;
   // --always-white: #FFFFFF;

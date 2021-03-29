@@ -18,6 +18,23 @@ i {
   min-height: calc(100vh - 124px) !important;
 }
 
+html._9dls {
+  overflow-y: auto !important;
+}
+
+::-webkit-scrollbar {
+  background: var(--messenger-card-background) !important;
+  width: 14px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-thumb) !important;
+  border: 8px !important;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3c3c3c !important;
+}
+
 :root:root {
   --card-background: #1c1c1c !important;
   --divider: #2c2c2c !important;

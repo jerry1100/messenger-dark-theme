@@ -6,6 +6,10 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
   fill: var(--primary-icon) !important;
 }
 
+.sf5mxxl7 {
+  --secondary-button-background: unset !important;
+}
+
 .iihba337 {
   display: none !important;
 }

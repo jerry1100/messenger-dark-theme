@@ -9,6 +9,12 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
     fill: var(--primary-icon) !important;
 }
 
+// Marketplace posts with quick responses (e.g. "Yes, it's available") have a parent
+// div that sets this variable via inline styles. Unset it so our original styles work.
+.sf5mxxl7 {
+    --secondary-button-background: unset !important;
+}
+
 // Hide desktop app upsell
 .iihba337 {
     display: none !important;

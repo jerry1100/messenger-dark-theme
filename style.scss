@@ -4,6 +4,11 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
     fill: var(--primary-icon) !important;
 }
 
+// Fix info panel's "Search in conversation" black icon
+.hwsy1cff path[fill="black"] {
+    fill: var(--primary-icon) !important;
+}
+
 // Hide desktop app upsell
 .iihba337 {
     display: none !important;

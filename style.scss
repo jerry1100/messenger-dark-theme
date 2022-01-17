@@ -15,6 +15,12 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
     --secondary-button-background: unset !important;
 }
 
+// Search in conversation's close button has background: var(--always-white) which is hard
+// to see with white text. Set it to proper dark background.
+.q2y6ezfg {
+    background-color: var(--secondary-button-background) !important;
+}
+
 // Hide desktop app upsell
 .iihba337 {
     display: none !important;

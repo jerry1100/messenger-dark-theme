@@ -10,6 +10,10 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
   --secondary-button-background: unset !important;
 }
 
+.q2y6ezfg {
+  background-color: var(--secondary-button-background) !important;
+}
+
 .iihba337 {
   display: none !important;
 }

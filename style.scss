@@ -1,8 +1,6 @@
-// For all SVGs which:
-//  1. aren't themed (no "fill" attribute)
-//  2. don't have the "--disabled-icon" style (no ".crt8y2ji" class)
-// update path fill
-svg:not([fill]):not(.crt8y2ji) path {
+// Use primary icon fill for SVGs that don't define a fill (keep custom themes).
+// Ignore .crt8y2ji (checkmarks in messages list) as its fill is from css
+svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
     fill: var(--primary-icon) !important;
 }
 

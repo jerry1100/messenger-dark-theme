@@ -1,4 +1,4 @@
-svg:not([fill]):not(.crt8y2ji) path {
+svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
   fill: var(--primary-icon) !important;
 }
 

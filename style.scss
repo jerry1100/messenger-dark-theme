@@ -4,9 +4,17 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
     fill: var(--primary-icon) !important;
 }
 
-// Fix info panel's "Search in conversation" black icon
-.hwsy1cff path[fill="black"] {
-    fill: var(--primary-icon) !important;
+// Many icons (e.g. Create Room, Edit Nicknames) use this class that sets the color
+// to --always-black. Overwrite them and use light icons instead.
+.moj8do2t {
+    color: var(--always-white) !important;
+
+    // Some icons specify their color via the path fill attribute, which overrides any
+    // parent color attribute. For paths inside icons that had color: --always-black,
+    // we should set the color to a light icon instead (e.g. Search in Conversation).
+    path[fill] {
+        fill: var(--primary-icon) !important;
+    }
 }
 
 // Marketplace posts with quick responses (e.g. "Yes, it's available") have a parent

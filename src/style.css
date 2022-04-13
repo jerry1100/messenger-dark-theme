@@ -2,7 +2,10 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
   fill: var(--primary-icon) !important;
 }
 
-.hwsy1cff path[fill=black] {
+.moj8do2t {
+  color: var(--always-white) !important;
+}
+.moj8do2t path[fill] {
   fill: var(--primary-icon) !important;
 }
 

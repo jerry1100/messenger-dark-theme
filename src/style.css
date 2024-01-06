@@ -23,7 +23,6 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
 
 :root,
 .__fb-light-mode {
-  color-scheme: dark !important;
   --fds-black: black !important;
   --fds-black-alpha-05: rgba(0, 0, 0, 0.05) !important;
   --fds-black-alpha-10: rgba(0, 0, 0, 0.1) !important;
@@ -256,9 +255,15 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
   --chat-text-blockquote-color-background-line: rgba(255, 255, 255, 0.19) !important;
   --chat-text-blockquote-color-text-primary-media: rgba(255, 255, 255, 0.7) !important;
   --chat-incoming-message-bubble-background-color: #303030 !important;
+  --chat-replied-message-background-color: rgba(255, 255, 255, 0.12) !important;
+  --radio-border-color: var(--primary-icon) !important;
+  --radio-border-color-disabled: var(--disabled-button-background) !important;
+  --radio-border-color-selected: var(--accent) !important;
+  --radio-checked-icon-color: var(--accent) !important;
+  --radio-checked-icon-color-disabled: var(--disabled-button-background) !important;
   --fb-logo-color: #2D88FF !important;
   --dialog-anchor-vertical-padding: 56px !important;
-  --header-height: 0px !important;
+  --header-height: 56px !important;
   --global-panel-width: 0px !important;
   --global-panel-width-expanded: 0px !important;
   --alert-banner-corner-radius: 8px !important;
@@ -416,6 +421,20 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
   --glimmer-animation-timing-function: steps(10, end) !important;
   --glimmer-opacity-min: 0.25 !important;
   --glimmer-opacity-max: 1 !important;
+  --radio-checked-icon-size-large: 12px !important;
+  --radio-checked-icon-size-medium: 12px !important;
+  --radio-border-width: 2px !important;
+  --radio-size-large: 24px !important;
+  --radio-size-medium: 20px !important;
+  --blue-primary: rgb(0,136,244) !important;
+  --blue-secondary: rgb(235,245,255) !important;
+  --blue-tertiary: rgb(4,59,114) !important;
+  --chartreuse-primary: rgb(106,147,22) !important;
+  --chartreuse-secondary: rgb(226,255,152) !important;
+  --chartreuse-tertiary: rgb(50,65,19) !important;
+  --cyan-primary: rgb(0,142,213) !important;
+  --cyan-secondary: rgb(231,245,255) !important;
+  --cyan-tertiary: rgb(15,63,93) !important;
   --dataviz-primary-2: rgb(134,218,255) !important;
   --dataviz-primary-3: rgb(95,170,255) !important;
   --dataviz-secondary-1: rgb(129,77,231) !important;
@@ -425,4 +444,34 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
   --dataviz-supplementary-2: rgb(241,168,23) !important;
   --dataviz-supplementary-3: rgb(49,162,76) !important;
   --dataviz-supplementary-4: rgb(228,230,235) !important;
+  --fuschia-primary: rgb(250,45,138) !important;
+  --fuschia-secondary: rgb(255,241,246) !important;
+  --fuschia-tertiary: rgb(118,14,62) !important;
+  --green-primary: rgb(43,154,53) !important;
+  --green-secondary: rgb(227,250,224) !important;
+  --green-tertiary: rgb(26,68,27) !important;
+  --magenta-primary: rgb(215,77,204) !important;
+  --magenta-secondary: rgb(255,239,254) !important;
+  --magenta-tertiary: rgb(96,36,91) !important;
+  --orange-primary: rgb(208,108,20) !important;
+  --orange-secondary: rgb(255,241,239) !important;
+  --orange-tertiary: rgb(94,49,14) !important;
+  --purple-primary: rgb(125,116,255) !important;
+  --purple-secondary: rgb(245,241,255) !important;
+  --purple-tertiary: rgb(55,50,121) !important;
+  --red-primary: rgb(251,60,68) !important;
+  --red-secondary: rgb(255,241,239) !important;
+  --red-tertiary: rgb(118,22,27) !important;
+  --teal-primary: rgb(0,152,124) !important;
+  --teal-secondary: rgb(227,247,241) !important;
+  --teal-tertiary: rgb(10,68,56) !important;
+  --yellow-primary: rgb(161,132,0) !important;
+  --yellow-secondary: rgb(255,246,161) !important;
+  --yellow-tertiary: rgb(72,59,12) !important;
+}
+
+:root,
+.__fb-light-mode {
+  --header-height: 0px !important;
+  --icon-primary-color: var(--primary-icon) !important;
 }

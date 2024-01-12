@@ -491,6 +491,10 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
 // Manual overrides on top of the default dark mode styles
 :root,
 .__fb-light-mode {
+    // Prevents light scrollbars
+    // See: https://github.com/jerry1100/messenger-dark-theme/issues/36
+    color-scheme: dark;
+
     // There's no header on messenger.com so zero it out
     --header-height: 0px !important;
 

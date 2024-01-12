@@ -474,6 +474,7 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
 
 :root,
 .__fb-light-mode {
+  color-scheme: dark;
   --header-height: 0px !important;
   --icon-primary-color: var(--primary-icon) !important;
 }

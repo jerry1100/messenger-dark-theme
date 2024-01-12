@@ -144,6 +144,7 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
   --divider: #3E4042 !important;
   --event-date: #F3425F !important;
   --fb-wordmark: #FFFFFF !important;
+  --fb-logo: #0866FF !important;
   --filter-accent: invert(74%) sepia(14%) saturate(7129%) hue-rotate(185deg) brightness(102%) contrast(101%) !important;
   --filter-always-white: invert(100%) !important;
   --filter-disabled-icon: invert(100%) opacity(30%) !important;
@@ -167,6 +168,7 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
   --media-outer-border: #33363A !important;
   --media-pressed: rgba(68, 73, 80, 0.35) !important;
   --messenger-card-background: #242526 !important;
+  --mwp-message-row-background: #242526 !important;
   --messenger-reply-background: #18191A !important;
   --overlay-alpha-80: rgba(11, 11, 11, 0.8) !important;
   --overlay-on-media: rgba(0, 0, 0, 0.6) !important;

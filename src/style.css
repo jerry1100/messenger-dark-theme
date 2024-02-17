@@ -2,6 +2,10 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
   fill: var(--primary-icon) !important;
 }
 
+.x4cne27 svg {
+  --primary-icon: var(--mwp-header-button-color) !important;
+}
+
 .x1p6odiv {
   color: var(--always-white) !important;
 }
@@ -185,7 +189,7 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
   --media-pressed: rgba(68, 73, 80, 0.35) !important;
   --messenger-card-background: #242526 !important;
   --mwp-header-background-color: var(--messenger-card-background) !important;
-  --mwp-header-button-color: var(--accent) !important;
+  --mwp-header-button-color: var(--accent);
   --mwp-message-row-background: var(--messenger-card-background) !important;
   --messenger-reply-background: #18191a !important;
   --overlay-alpha-80: rgba(11, 11, 11, 0.8) !important;

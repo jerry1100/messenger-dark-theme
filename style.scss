@@ -4,6 +4,17 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
   fill: var(--primary-icon) !important;
 }
 
+// Color the phone and video call buttons based on the custom theme
+// The SVGs are filled by --primary-icon from an ancestor element's inline style,
+// which is set to --mwp-header-button-color via an inline style further up. Since
+// --primary-icon is being overwritten below, we'll have to manually set it to
+// --mwp-header-button-color, which is the custom chat color. Careful to only set it
+// for the call buttons otherwise it will color all the icons, which we don't want!
+// See: https://github.com/jerry1100/messenger-dark-theme/issues/40
+.x4cne27 svg {
+  --primary-icon: var(--mwp-header-button-color) !important;
+}
+
 // Many icons (e.g. Create Room, Edit Nicknames) use this class that sets the color
 // to --always-black. Overwrite them and use light icons instead.
 .x1p6odiv {
@@ -37,6 +48,7 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
 // To update these styles:
 //  1. Go to messenger.com and copy the styles under "__fb-dark-mode"
 //  2. Paste styles here and append !important to all of them
+//  3. Remove the !important for '--mwp-header-button-color' since that's set dynamically
 :root,
 .__fb-light-mode {
   --fds-black: black !important;
@@ -201,7 +213,7 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
   --media-pressed: rgba(68, 73, 80, 0.35) !important;
   --messenger-card-background: #242526 !important;
   --mwp-header-background-color: var(--messenger-card-background) !important;
-  --mwp-header-button-color: var(--accent) !important;
+  --mwp-header-button-color: var(--accent);
   --mwp-message-row-background: var(--messenger-card-background) !important;
   --messenger-reply-background: #18191a !important;
   --overlay-alpha-80: rgba(11, 11, 11, 0.8) !important;

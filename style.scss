@@ -178,13 +178,16 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
     --hosted-view-selected-state: #1D85FC19 !important;
     --highlight-bg: rgba(24, 119, 242, .31) !important;
     --hover-overlay: rgba(255, 255, 255, 0.1) !important;
+    --inverse-text: var(--always-white) !important;
     --list-cell-chevron: #B0B3B8 !important;
     --media-hover: rgba(68, 73, 80, 0.15) !important;
     --media-inner-border: rgba(255, 255, 255, 0.05) !important;
     --media-outer-border: #33363A !important;
     --media-pressed: rgba(68, 73, 80, 0.35) !important;
     --messenger-card-background: #242526 !important;
-    --mwp-message-row-background: #242526 !important;
+    --mwp-header-background-color: var(--messenger-card-background) !important;
+    --mwp-header-button-color: var(--accent) !important;
+    --mwp-message-row-background: var(--messenger-card-background) !important;
     --messenger-reply-background: #18191A !important;
     --overlay-alpha-80: rgba(11, 11, 11, 0.8) !important;
     --overlay-on-media: rgba(0, 0, 0, 0.6) !important;
@@ -273,6 +276,7 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
     --chat-text-blockquote-color-background-line: rgba(255, 255, 255, 0.19) !important;
     --chat-text-blockquote-color-text-primary-media: rgba(255, 255, 255, 0.7) !important;
     --chat-incoming-message-bubble-background-color: #303030 !important;
+    --chat-outgoing-message-bubble-background-color: var(--accent) !important;
     --chat-replied-message-background-color: rgba(255, 255, 255, 0.12) !important;
     --radio-border-color: var(--primary-icon) !important;
     --radio-border-color-disabled: var(--disabled-button-background) !important;
@@ -454,7 +458,7 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
     --cyan-secondary: rgb(231,245,255) !important;
     --cyan-tertiary: rgb(15,63,93) !important;
     --dataviz-primary-2: rgb(134,218,255) !important;
-    --dataviz-primary-3: rgb(95,170,255) !important;
+    --dataviz-primary-3: rgb(73,156,255) !important;
     --dataviz-secondary-1: rgb(129,77,231) !important;
     --dataviz-secondary-2: rgb(168,124,255) !important;
     --dataviz-secondary-3: rgb(219,26,139) !important;
@@ -502,4 +506,10 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
     // so point the latter to the former
     // See: https://github.com/jerry1100/messenger-dark-theme/issues/34
     --icon-primary-color: var(--primary-icon) !important;
+
+    // The hover and selected states for the chat list items on messenger.com are using different
+    // variables than on facebook.com, so set them to the latter
+    // See: https://github.com/jerry1100/messenger-dark-theme/issues/41
+    --pressable-background-color-hover: var(--hover-overlay) !important;
+    --pressable-background-color-selected: var(--hosted-view-selected-state) !important;
 }

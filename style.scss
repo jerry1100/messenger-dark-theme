@@ -15,6 +15,15 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
   --primary-icon: var(--mwp-header-button-color) !important;
 }
 
+// Fix the color of the mute indicator at the top of the chat
+.xz5rk10 {
+  opacity: 1 !important;
+
+  svg {
+    --color: var(--placeholder-icon) !important;
+  }
+}
+
 // Many icons (e.g. Create Room, Edit Nicknames) use this class that sets the color
 // to --always-black. Overwrite them and use light icons instead.
 .x1p6odiv {
@@ -574,6 +583,9 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
   // so point the latter to the former
   // See: https://github.com/jerry1100/messenger-dark-theme/issues/34
   --icon-primary-color: var(--primary-icon) !important;
+
+  // Fix search icon color
+  --icon-tertiary-color: var(--placeholder-icon) !important;
 
   // The hover and selected states for the chat list items on messenger.com are using different
   // variables than on facebook.com, so set them to the latter

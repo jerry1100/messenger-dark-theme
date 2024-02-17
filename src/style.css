@@ -6,6 +6,13 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
   --primary-icon: var(--mwp-header-button-color) !important;
 }
 
+.xz5rk10 {
+  opacity: 1 !important;
+}
+.xz5rk10 svg {
+  --color: var(--placeholder-icon) !important;
+}
+
 .x1p6odiv {
   color: var(--always-white) !important;
 }
@@ -541,6 +548,7 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
   color-scheme: dark;
   --header-height: 0px !important;
   --icon-primary-color: var(--primary-icon) !important;
+  --icon-tertiary-color: var(--placeholder-icon) !important;
   --pressable-background-color-hover: var(--hover-overlay) !important;
   --pressable-background-color-selected: var(
     --hosted-view-selected-state

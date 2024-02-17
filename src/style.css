@@ -13,13 +13,6 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
   --color: var(--placeholder-icon) !important;
 }
 
-.x1p6odiv {
-  color: var(--always-white) !important;
-}
-.x1p6odiv path[fill] {
-  fill: var(--primary-icon) !important;
-}
-
 .sf5mxxl7 {
   --secondary-button-background: unset !important;
 }

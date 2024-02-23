@@ -310,7 +310,7 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
     0.7
   ) !important;
   --chat-incoming-message-bubble-background-color: #303030 !important;
-  --chat-outgoing-message-bubble-background-color: var(--accent) !important;
+  --chat-outgoing-message-bubble-background-color: var(--accent);
   --chat-replied-message-background-color: rgba(255, 255, 255, 0.12) !important;
   --radio-border-color: var(--primary-icon) !important;
   --radio-border-color-disabled: var(--disabled-button-background) !important;

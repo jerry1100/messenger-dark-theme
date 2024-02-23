@@ -44,7 +44,9 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
 // To update these styles:
 //  1. Go to messenger.com and copy the styles under "__fb-dark-mode"
 //  2. Paste styles here and append !important to all of them
-//  3. Remove the !important for '--mwp-header-button-color' since that's set dynamically
+//  3. Remove the !important for these dynamically set variables:
+//    a. --mwp-header-button-color
+//    b. --chat-outgoing-message-bubble-background-color
 :root,
 .__fb-light-mode {
   --fds-black: black !important;
@@ -330,7 +332,7 @@ svg:not([fill]):not(.crt8y2ji) path:not([fill]) {
     0.7
   ) !important;
   --chat-incoming-message-bubble-background-color: #303030 !important;
-  --chat-outgoing-message-bubble-background-color: var(--accent) !important;
+  --chat-outgoing-message-bubble-background-color: var(--accent);
   --chat-replied-message-background-color: rgba(255, 255, 255, 0.12) !important;
   --radio-border-color: var(--primary-icon) !important;
   --radio-border-color-disabled: var(--disabled-button-background) !important;

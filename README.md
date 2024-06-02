@@ -8,8 +8,7 @@ I'll leave this up until the end of July but will unpublish it from the chrome &
 
 You can enable the native dark theme via the preferences in the bottom left menu.
 
-<img src="./docs/instructions1.png" height=400 />
-<img src="./docs/instructions2.png" height=400 />
+![Enabling native dark theme](./docs/instructions.png)
 
 ## Previous README
 

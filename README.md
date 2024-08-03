@@ -1,8 +1,8 @@
-# messenger-dark-theme (deprecated)
+# messenger-dark-theme (DEPRECATED)
 
-In mid 2024, Facebook finally rolled out a native dark theme for messenger.com, making this extension unnecessary. I recommend uninstalling this and using the native version instead ([instructions here](#enabling-the-native-dark-theme)).
+This extension is no longer necessary as facebook rolled out a native dark theme for messenger.com in mid 2024. Follow [these instructions](#enabling-the-native-dark-theme) to enable it.
 
-I'll leave this up until the end of July but will unpublish it from the chrome & edge stores afterwards.
+I left this up for three months to give people time to switch, but I've since unpublished it from the chrome and edge stores.
 
 ## Enabling the native dark theme
 
